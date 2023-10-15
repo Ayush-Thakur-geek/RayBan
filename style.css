@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "gilroy";
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Front Part */
+
+#front {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+#working {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+}
+
+#nav {
+  width: 100%;
+  padding: 20px 0dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav img {
+  height: 60px;
+}
+
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+#nav a {
+  pointer-events: all;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#nav a:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+#info {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(0, -50%);
+  width: 100%;
+  min-width: 50%;
+}
+
+#infoleft {
+  min-width: 50%;
+}
+
+#infoleft .elem {
+  position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+
+#infoleft .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 0.9;
+  font-family: "kajiro";
+  color: white;
+  font-weight: 100;
+  font-size: 11vw;
+}
+
+#infoleft .elem h1:nth-child(1) {
+  top: 0;
+}
+
+#infoleft button {
+  pointer-events: all;
+  padding: 0.8vw 3vw;
+  margin-top: 2vw;
+  font-size: 3vw;
+  font-family: "kajiro";
+  cursor: pointer;
+}
+
+#infoleft button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+#inforight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 17%;
+  color: white;
+}
+
+#inforight p {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+}
+
+#inforight #imagediv {
+  width: 100%;
+  height: 170px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: rgb(149, 144, 144);
+  background-image: url(images/joseph-keyser-R6ER3Ws6tzA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#inforight p:nth-child(3) {
+  margin-bottom: 100px;
+}
+
+/* Back Part */
+
+#back {
+    width: 100%;
+    height: 100vh;
+}
+
+#back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
